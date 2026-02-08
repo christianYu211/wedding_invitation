@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="description" content="俞杰 & 余艳 订婚请柬 - 2026年2月14日">
+    <meta name="keywords" content="订婚请柬,婚礼邀请函,订婚仪式">
+    <meta name="author" content="俞杰 & 余艳">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="俞杰 & 余艳 订婚请柬">
+    <meta property="og:description" content="诚挚邀请您见证我们的承诺">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.pages.dev/">
+    <meta property="og:image" content="https://your-domain.pages.dev/og-image.jpg">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="俞杰 & 余艳 订婚请柬">
+    <meta name="twitter:description" content="诚挚邀请您见证我们的承诺">
+    
+    <title>订婚请柬 | 俞杰 & 余艳</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            background: linear-gradient(135deg, #faf5ff 0%, #fff 50%, #fef3c7 100%);
+            min-height: 100vh;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            background: white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            min-height: 100vh;
+        }
+
+        /* 封面 */
+        .hero {
+            background: linear-gradient(135deg, #fce7f3 0%, #fef3c7 100%);
+            padding: 80px 30px 60px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.4) 0%, transparent 70%);
+            animation: rotate 25s linear infinite;
+        }
+
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+
+        .ring-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .hero h1 {
+            font-size: 26px;
+            color: #9d174d;
+            margin-bottom: 10px;
+            position: relative;
+            z-index: 1;
+            font-weight: normal;
+        }
+
+        .hero .subtitle {
+            font-size: 16px;
+            color: #92400e;
+            margin-bottom: 25px;
+            position: relative;
+            z-index: 1;
+            letter-spacing: 2px;
+        }
+
+        .hero .couple-names {
+            font-size: 22px;
+            font-weight: bold;
+            color: #831843;
+            position: relative;
+            z-index: 1;
+            letter-spacing: 3px;
+        }
+
+        .hero .couple-names span {
+            margin: 0 15px;
+            color: #b45309;
+        }
+
+        /* 照片展示区 */
+        .gallery-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 18px;
+            color: #9d174d;
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+            letter-spacing: 2px;
+        }
+
+        .section-title::before,
+        .section-title::after {
+            content: '💍';
+            margin: 0 12px;
+        }
+
+        /* 轮播图样式 */
+        .carousel-container {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 4/3;
+            margin: 0 auto;
+            border-radius: 16px;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(157, 23, 77, 0.15);
+        }
+
+        .carousel-track {
+            display: flex;
+            transition: transform 0.5s ease;
+            height: 100%;
+        }
+
+        .carousel-slide {
+            min-width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            color: white;
+            position: relative;
+        }
+
+        .carousel-slide::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(157, 23, 77, 0.3) 0%, rgba(146, 64, 14, 0.3) 100%);
+            z-index: 1;
+        }
+
+        .carousel-slide span {
+            position: relative;
+            z-index: 2;
+            font-size: 18px;
+            font-weight: 500;
+            text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        .carousel-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(255, 255, 255, 0.9);
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #9d174d;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            transition: all 0.3s;
+            z-index: 10;
+        }
+
+        .carousel-btn:hover {
+            background: white;
+            transform: translateY(-50%) scale(1.1);
+        }
+
+        .carousel-btn.prev {
+            left: 10px;
+        }
+
+        .carousel-btn.next {
+            right: 10px;
+        }
+
+        .carousel-indicators {
+            position: absolute;
+            bottom: 15px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 8px;
+            z-index: 10;
+        }
+
+        .carousel-indicator {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.6);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .carousel-indicator.active {
+            background: white;
+            width: 24px;
+            border-radius: 4px;
+        }
+
+        .carousel-progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #9d174d, #f472b6);
+            z-index: 10;
+            transition: width 0.1s linear;
+        }
+
+        /* 订婚信息 */
+        .engagement-info {
+            background: linear-gradient(135deg, #fdf4ff 0%, #fffbeb 100%);
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .info-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(157, 23, 77, 0.08);
+            border: 1px solid #fce7f3;
+        }
+
+        .info-item {
+            margin-bottom: 22px;
+        }
+
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .info-label {
+            font-size: 13px;
+            color: #92400e;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        .info-value {
+            font-size: 17px;
+            color: #333;
+            font-weight: 500;
+        }
+
+        /* 位置地图 */
+        .location-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 220px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 18px rgba(0,0,0,0.08);
+            margin-bottom: 18px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        .address {
+            font-size: 15px;
+            color: #666;
+            line-height: 1.7;
+        }
+
+        /* 联系方式 */
+        .contact-section {
+            padding: 40px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #fce7f3 0%, #fde68a 100%);
+        }
+
+        .contact-cards {
+            display: grid;
+            gap: 15px;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: white;
+            padding: 22px;
+            border-radius: 16px;
+            box-shadow: 0 4px 18px rgba(157, 23, 77, 0.1);
+        }
+
+        .contact-name {
+            font-size: 15px;
+            color: #9d174d;
+            margin-bottom: 12px;
+            font-weight: 500;
+        }
+
+        .contact-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .contact-btn {
+            padding: 10px 22px;
+            border: none;
+            border-radius: 28px;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .contact-btn.phone {
+            background: linear-gradient(135deg, #9d174d 0%, #831843 100%);
+            color: white;
+        }
+
+        .contact-btn.wechat {
+            background: linear-gradient(135deg, #059669 0%, #047857 100%);
+            color: white;
+        }
+
+        .contact-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* 祝福留言 */
+        .blessing-section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .blessing-form {
+            background: #fdf4ff;
+            padding: 25px;
+            border-radius: 16px;
+        }
+
+        .blessing-input {
+            width: 100%;
+            padding: 14px;
+            border: 2px solid #fbcfe8;
+            border-radius: 10px;
+            font-size: 15px;
+            margin-bottom: 15px;
+            font-family: inherit;
+            resize: none;
+        }
+
+        .blessing-input:focus {
+            outline: none;
+            border-color: #9d174d;
+        }
+
+        .blessing-btn {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #9d174d 0%, #831843 100%);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .blessing-btn:active {
+            transform: scale(0.98);
+        }
+
+        /* 底部 */
+        .footer {
+            text-align: center;
+            padding: 35px 25px;
+            background: linear-gradient(135deg, #fbcfe8 0%, #fde68a 100%);
+            color: #831843;
+        }
+
+        .footer p {
+            font-size: 14px;
+            line-height: 1.8;
+            margin-bottom: 8px;
+        }
+
+        .footer .quote {
+            font-style: italic;
+            color: #92400e;
+            margin-top: 15px;
+            font-size: 13px;
+        }
+
+        /* 动画 */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* 响应式优化 */
+        @media (max-width: 375px) {
+            .hero h1 {
+                font-size: 22px;
+            }
+            
+            .hero .couple-names {
+                font-size: 18px;
+            }
+            
+            .section-title {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 封面 -->
+        <section class="hero">
+            <div class="ring-icon">💍</div>
+            <h1>订婚之喜</h1>
+            <p class="subtitle">诚挚邀请您见证我们的承诺</p>
+            <p class="couple-names">俞杰 <span>&</span> 余艳</p>
+        </section>
+
+        <!-- 照片展示区 -->
+        <section class="gallery-section fade-in">
+            <h2 class="section-title">幸福时光</h2>
+            <div class="carousel-container">
+                <div class="carousel-track" id="carouselTrack">
+                    <div class="carousel-slide" style="background: linear-gradient(135deg, #fce7f3 0%, #fef3c7 100%);">
+                        <span>📷 相识时刻</span>
+                    </div>
+                    <div class="carousel-slide" style="background: linear-gradient(135deg, #fef3c7 0%, #fed7aa 100%);">
+                        <span>📷 甜蜜相恋</span>
+                    </div>
+                    <div class="carousel-slide" style="background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);">
+                        <span>📷 美好回忆</span>
+                    </div>
+                    <div class="carousel-slide" style="background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);">
+                        <span>📷 求婚瞬间</span>
+                    </div>
+                    <div class="carousel-slide" style="background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);">
+                        <span>📷 订婚喜悦</span>
+                    </div>
+                </div>
+                <button class="carousel-btn prev" onclick="prevSlide()" aria-label="上一张">❮</button>
+                <button class="carousel-btn next" onclick="nextSlide()" aria-label="下一张">❯</button>
+                <div class="carousel-indicators" id="carouselIndicators"></div>
+                <div class="carousel-progress" id="carouselProgress"></div>
+            </div>
+        </section>
+
+        <!-- 订婚信息 -->
+        <section class="engagement-info fade-in">
+            <h2 class="section-title">订婚仪式</h2>
+            <div class="info-card">
+                <div class="info-item">
+                    <p class="info-label">准新郎</p>
+                    <p class="info-value">俞杰</p>
+                </div>
+                <div class="info-item">
+                    <p class="info-label">准新娘</p>
+                    <p class="info-value">余艳</p>
+                </div>
+                <div class="info-item">
+                    <p class="info-label">订婚时间</p>
+                    <p class="info-value">2026年2月14日 14:00</p>
+                </div>
+                <div class="info-item">
+                    <p class="info-label">订婚地点</p>
+                    <p class="info-value">浪漫庄园餐厅</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 位置地图 -->
+        <section class="location-section fade-in">
+            <h2 class="section-title">餐厅位置</h2>
+            <div class="map-container">
+                <iframe 
+                    src="https://www.amap.com/search?id=B0K6DH47DE&city=320507&geoobj=119.57476%7C30.75455%7C122.044347%7C31.87133&query_type=IDQ&query=%E4%BB%8A%E7%A6%A7%E7%BC%98%E4%B8%80%E7%AB%99%E5%BC%8F%E5%A9%9A%E5%AE%B4%E4%B8%AD%E5%BF%83(%E8%8B%8F%E5%B7%9E%E7%8E%8B%E5%BA%9C%E4%BA%95%E7%94%9F%E6%B4%BB%E5%B9%BF%E5%9C%BA%E5%BA%97)&zoom=10.21" 
+                    loading="lazy" 
+                    title="餐厅位置"
+                    aria-label="地图显示餐厅位置">
+                </iframe>
+            </div>
+            <p class="address">江苏省苏州市相城区澄阳街道嘉元路188号<br>今禧缘婚宴中心 5楼</p>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="contact-section fade-in">
+            <h2 class="section-title">联系新人</h2>
+            <div class="contact-cards">
+                <div class="contact-card">
+                    <p class="contact-name">准新郎 俞杰</p>
+                    <div class="contact-actions">
+                        <a href="tel:13236135280" class="contact-btn phone">📞 拨打电话</a>
+                        <a href="#" class="contact-btn wechat">💬 微信联系</a>
+                    </div>
+                </div>
+                <div class="contact-card">
+                    <p class="contact-name">准新娘 余艳</p>
+                    <div class="contact-actions">
+                        <a href="tel:16651291226" class="contact-btn phone">📞 拨打电话</a>
+                        <a href="#" class="contact-btn wechat">💬 微信联系</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 祝福留言 -->
+        <section class="blessing-section fade-in">
+            <h2 class="section-title">送上祝福</h2>
+            <div class="blessing-form">
+                <textarea class="blessing-input" rows="4" placeholder="写下您的祝福，见证我们的幸福时刻..." aria-label="祝福留言"></textarea>
+                <button class="blessing-btn" onclick="alert('感谢您的祝福！愿我们一起分享这份喜悦 💍')">发送祝福</button>
+            </div>
+        </section>
+
+        <!-- 底部 -->
+        <footer class="footer">
+            <p>感谢您的见证与祝福</p>
+            <p>愿这份美好与您同在</p>
+            <p class="quote">"执子之手，与子偕老"</p>
+            <p style="margin-top: 15px;">💍 2026.02.14 💍</p>
+        </footer>
+    </div>
+
+    <script>
+        // 轮播图功能
+        (function() {
+            const track = document.getElementById('carouselTrack');
+            const slides = document.querySelectorAll('.carousel-slide');
+            const indicatorsContainer = document.getElementById('carouselIndicators');
+            const progress = document.getElementById('carouselProgress');
+            
+            if (!track || !slides.length) return;
+            
+            let currentIndex = 0;
+            const totalSlides = slides.length;
+            const autoPlayInterval = 4000;
+            let progressTimer;
+
+            // 创建指示器
+            slides.forEach((_, index) => {
+                const indicator = document.createElement('div');
+                indicator.className = 'carousel-indicator';
+                indicator.setAttribute('role', 'button');
+                indicator.setAttribute('aria-label', `查看第 ${index + 1} 张照片`);
+                if (index === 0) indicator.classList.add('active');
+                indicator.addEventListener('click', () => goToSlide(index));
+                indicatorsContainer.appendChild(indicator);
+            });
+
+            function updateCarousel() {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+                
+                // 更新指示器
+                document.querySelectorAll('.carousel-indicator').forEach((indicator, index) => {
+                    indicator.classList.toggle('active', index === currentIndex);
+                });
+            }
+
+            function goToSlide(index) {
+                currentIndex = index;
+                if (currentIndex < 0) currentIndex = totalSlides - 1;
+                if (currentIndex >= totalSlides) currentIndex = 0;
+                updateCarousel();
+                resetAutoPlay();
+            }
+
+            function nextSlide() {
+                goToSlide(currentIndex + 1);
+            }
+
+            function prevSlide() {
+                goToSlide(currentIndex - 1);
+            }
+
+            function startAutoPlay() {
+                let progressWidth = 0;
+                const progressStep = 100 / (autoPlayInterval / 50);
+                
+                progressTimer = setInterval(() => {
+                    progressWidth += progressStep;
+                    if (progressWidth >= 100) {
+                        progressWidth = 0;
+                        nextSlide();
+                    }
+                    progress.style.width = progressWidth + '%';
+                }, 50);
+            }
+
+            function resetAutoPlay() {
+                clearInterval(progressTimer);
+                progress.style.width = '0%';
+                startAutoPlay();
+            }
+
+            // 触摸滑动支持
+            let touchStartX = 0;
+            let touchEndX = 0;
+            const carouselContainer = document.querySelector('.carousel-container');
+
+            if (carouselContainer) {
+                carouselContainer.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    clearInterval(progressTimer);
+                }, { passive: true });
+
+                carouselContainer.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    handleSwipe();
+                    startAutoPlay();
+                }, { passive: true });
+
+                function handleSwipe() {
+                    const swipeThreshold = 50;
+                    const diff = touchStartX - touchEndX;
+                    
+                    if (Math.abs(diff) > swipeThreshold) {
+                        if (diff > 0) {
+                            nextSlide();
+                        } else {
+                            prevSlide();
+                        }
+                    }
+                }
+
+                // 鼠标悬停暂停
+                carouselContainer.addEventListener('mouseenter', () => {
+                    clearInterval(progressTimer);
+                });
+
+                carouselContainer.addEventListener('mouseleave', () => {
+                    startAutoPlay();
+                });
+            }
+
+            // 初始化
+            startAutoPlay();
+        })();
+
+        // 滚动动画
+        (function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        })();
+    </script>
+</body>
+</html>
